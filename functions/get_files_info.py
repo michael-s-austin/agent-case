@@ -13,10 +13,20 @@ def get_files_info(working_directory: str, directory: str = ".") -> str:
             return f'Error: Cannot list "{directory}" as it is outside the permitted working directory'
                 
         else:
-            return f'Success: "{directory}" is within the working directory'
+            file_list = os.listdir(target_dir)   
+            parsed_list = []
+            for file in file_list:
+                file_name_path = os.path.join(target_dir, file)
+                file_detail = f"- {file}: file_size={os.path.getsize(file_name_path)}, is_dir={os.path.isdir(file_name_path)}"
+                parsed_list.append(file_detail)
+            return '\n'.join(parsed_list)
 
     except Exception as e:
         return f"Error: {e}"
+    
+  
+
+
     
     
     

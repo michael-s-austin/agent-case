@@ -1,7 +1,9 @@
 # calculator/main.py
 
 import sys
+# pyrefly: ignore [missing-import]
 from pkg.calculator import Calculator
+# pyrefly: ignore [missing-import]
 from pkg.render import format_json_output
 
 def main() -> None:

@@ -3,9 +3,9 @@
 Agent Case (see *Neuromancer*) was built as part of a guided learning project through [Boot.dev](https://www.boot.dev/u/digitalmystic). The agent's functionality was tested during development with the included calculator code, writing to files and fixing deliberately introduced bugs.
 
 ### Features
-- Navigate directories
-- Read files
-- Create and write to files
+- Navigates directories
+- Reads files
+- Creates and writes to files
 - Executes Python code autonomously
 
 ### How to Run

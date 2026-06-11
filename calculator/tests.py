@@ -3,6 +3,7 @@
 import unittest
 from pkg.calculator import Calculator
 
+
 class TestCalculator(unittest.TestCase):
     def setUp(self) -> None:
         self.calculator = Calculator()

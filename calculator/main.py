@@ -1,10 +1,13 @@
 # calculator/main.py
 
 import sys
+
 # pyrefly: ignore [missing-import]
 from pkg.calculator import Calculator
+
 # pyrefly: ignore [missing-import]
 from pkg.render import format_json_output
+
 
 def main() -> None:
     calculator = Calculator()
@@ -24,6 +27,7 @@ def main() -> None:
             print("Error: Expression is empty or contains only whitespace.")
     except Exception as e:
         print(f"Error: {e}")
+
 
 if __name__ == "__main__":
     main()

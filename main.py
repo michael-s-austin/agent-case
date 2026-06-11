@@ -2,11 +2,9 @@ import argparse
 import os
 
 from dotenv import load_dotenv
+from generate_content import generate_content
 from google import genai
 from google.genai import types
-from prompts import system_prompt
-from call_function import available_functions, call_function
-from generate_content import generate_content
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Case")
@@ -23,7 +21,9 @@ def main() -> None:
     messages: list[types.Content] = [
         types.Content(role="user", parts=[types.Part(text=args.user_prompt)])
     ]
-    generate_content(client, messages, args.verbose, args.user_prompt)
+    
+    content = generate_content(client, messages, args.verbose, args.user_prompt)
+    print(content)
         
 if __name__=="__main__":
     main() 

@@ -1,6 +1,6 @@
 # "Toy" AI Coding Agent - Gemini 2.5 Flash
 
-Agent Case (see *Neuromancer*) was built as part of a guided learning project through Boot.dev. The agent's functionality was tested during development with the included calculator code, writing to files and fixing deliberately introduced bugs.
+Agent Case (see *Neuromancer*) was built as part of a guided learning project through [Boot.dev](https://www.boot.dev/u/digitalmystic). The agent's functionality was tested during development with the included calculator code, writing to files and fixing deliberately introduced bugs.
 
 ### Features
 - Navigate directories
